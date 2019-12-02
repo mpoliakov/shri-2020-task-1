@@ -1,0 +1,7 @@
+@import "../../variables";
+
+.list__item_indent-t {
+  &_m {
+    margin-top: $space-m;
+  }
+}

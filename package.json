@@ -1,0 +1,32 @@
+{
+  "name": "shri-2020-task-1",
+  "version": "1.0.0",
+  "description": "Тестовое задание «Реализуйте дизайн-систему» для 16-й Школы разработки интерфейсов (зима 2020, Москва).",
+  "main": "templater.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpoliakov/shri-2020-task-1.git"
+  },
+  "author": "Maksim Poliakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpoliakov/shri-2020-task-1/issues"
+  },
+  "homepage": "https://github.com/mpoliakov/shri-2020-task-1#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "gulp": "^4.0.2",
+    "gulp-file": "^0.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "yargs": "^15.0.2"
+  }
+}

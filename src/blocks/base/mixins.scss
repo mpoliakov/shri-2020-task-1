@@ -1,0 +1,66 @@
+@mixin set-theme-colors(
+  $bg-color-default: #ffffff,
+  $bg-color-accent: #ffcc00,
+  $border-color: #000000,
+  $text-color: #000000,
+  $link-color: #0077ff
+) {
+  --bg-color-default: #{$bg-color-default};
+  //$bg-color-default-default: $bg-color-default !global;
+  --bg-color-accent: #{$bg-color-accent};
+  --border-color: #{$border-color};
+  --text-color-primary: #{$text-color};
+  --text-color-secondary: #{rgba($text-color, 0.6)};
+  --text-color-additional: #{rgba($text-color, 0.3)};
+  --link-color: #{$link-color};
+}
+
+@mixin set-theme-sizes(
+  $font-size-s: 7px,
+  $font-size-m: 8px,
+  $font-size-l: 10px,
+  $font-size-xl: 11px,
+  $font-size-xxl: 13px,
+  $line-height-s: 18px,
+  $line-height-m: 21px,
+  $line-height-l: 25px,
+  $line-height-xl: 28px,
+  $line-height-xxl: 34px
+) {
+  --font-size-s: #{$font-size-s};
+  --font-size-m: #{$font-size-m};
+  --font-size-l: #{$font-size-l};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-xxl: #{$font-size-xxl};
+  --line-height-s: #{$line-height-s};
+  --line-height-m: #{$line-height-m};
+  --line-height-l: #{$line-height-l};
+  --line-height-xl: #{$line-height-xl};
+  --line-height-xxl: #{$line-height-xxl};
+}
+
+@mixin set-theme-spaces(
+  $space-xxxs: 2px,
+  $space-xxs: 4px,
+  $space-xs: 8px,
+  $space-s: 12px,
+  $space-m: 16px,
+  $space-l: 20px,
+  $space-xl: 24px,
+  $space-xxl: 32px,
+  $space-xxxl: 40px,
+  $space-xxxxl: 48px,
+  $space-xxxxxl: 72px
+) {
+  --space-xxxs: #{$space-xxxs};
+  --space-xxs: #{$space-xxs};
+  --space-xs: #{$space-xs};
+  --space-s: #{$space-s};
+  --space-m: #{$space-m};
+  --space-l: #{$space-l};
+  --space-xl: #{$space-xl};
+  --space-xxl: #{$space-xxl};
+  --space-xxxl: #{$space-xxxl};
+  --space-xxxxl: #{$space-xxxxl};
+  --space-xxxxxl: #{$space-xxxxxl};
+}

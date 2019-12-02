@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.section_indent-b {
+  &_xxl {
+    margin-bottom: $space-xxl;
+  }
+
+  &_xxxxl {
+    margin-bottom: $space-xxxxl;
+  }
+}

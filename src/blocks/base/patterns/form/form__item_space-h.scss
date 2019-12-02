@@ -1,0 +1,48 @@
+@import "../../variables";
+
+.form__item_space-h {
+  &_xxxs {
+    padding-left: $space-xxxs;
+    padding-right: $space-xxxs;
+  }
+
+  &_xxs {
+    padding-left: $space-xxs;
+    padding-right: $space-xxs;
+  }
+
+  &_s {
+    padding-left: $space-s;
+    padding-right: $space-s;
+  }
+
+  &_m {
+    padding-left: $space-m;
+    padding-right: $space-m;
+  }
+
+  &_l {
+    padding-left: $space-l;
+    padding-right: $space-l;
+  }
+
+  &_xl {
+    padding-left: $space-xl;
+    padding-right: $space-xl;
+  }
+
+  &_xxl {
+    padding-left: $space-xxl;
+    padding-right: $space-xxl;
+  }
+
+  &_xxxl {
+    padding-left: $space-xxxl;
+    padding-right: $space-xxxl;
+  }
+
+  &_xxxxl {
+    padding-left: $space-xxxxl;
+    padding-right: $space-xxxxl;
+  }
+}

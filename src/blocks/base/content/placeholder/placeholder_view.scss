@@ -1,0 +1,7 @@
+@import "../../variables";
+
+.placeholder_view {
+  &_primary {
+    background-color: $text-color-primary;
+  }
+}

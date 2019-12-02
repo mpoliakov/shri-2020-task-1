@@ -1,0 +1,7 @@
+@import "../../variables";
+
+.list_view {
+  &_default {
+    background-color: $bg-color-default;
+  }
+}

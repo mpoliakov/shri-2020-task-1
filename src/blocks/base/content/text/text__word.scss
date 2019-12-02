@@ -1,0 +1,25 @@
+@import "text__word_width";
+
+.text__word {
+  display: inline-block;
+
+  .text_size_s & {
+    height: $font-size-s;
+  }
+
+  .text_size_m & {
+    height: $font-size-m;
+  }
+
+  .text_size_l & {
+    height: $font-size-l;
+  }
+
+  .text_size_xl & {
+    height: $font-size-xl;
+  }
+
+  .text_size_xxl & {
+    height: $font-size-xxl;
+  }
+}

@@ -1,0 +1,7 @@
+@import "grid_m-columns";
+@import "grid_col-gap";
+@import "grid_row-gap";
+@import "grid__fraction";
+
+// Ширина экрана screen-m совпадает с шириной брейкпойнта и равна 1144px.
+$screen-m: $breakpoint;

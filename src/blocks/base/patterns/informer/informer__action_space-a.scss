@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.informer__item_space-a {
+  &_xl {
+    padding: $space-xl;
+  }
+
+  &_xxl {
+    padding: $space-xxl;
+  }
+}
+

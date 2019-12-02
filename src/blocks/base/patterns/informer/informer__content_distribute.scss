@@ -1,0 +1,13 @@
+.informer__content_distribute {
+  &_default {
+    justify-content: space-around;
+  }
+
+  &_between {
+    justify-content: space-between;
+  }
+
+  &_center  {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.form__item_indent-b {
+  &_xxxs {
+    margin-bottom: $space-xxxs;
+  }
+
+  &_xxs {
+    margin-bottom: $space-xxs;
+  }
+
+  &_s {
+    margin-bottom: $space-s;
+  }
+
+  &_m {
+    margin-bottom: $space-m;
+  }
+
+  &_l {
+    margin-bottom: $space-l;
+  }
+
+  &_xl {
+    margin-bottom: $space-xl;
+  }
+
+  &_xxl {
+    margin-bottom: $space-xxl;
+  }
+
+  &_xxxl {
+    margin-bottom: $space-xxxl;
+  }
+
+  &_xxxxl {
+    margin-bottom: $space-xxxxl;
+  }
+}

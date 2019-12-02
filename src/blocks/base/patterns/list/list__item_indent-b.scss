@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.list__item_indent-b {
+  &_s {
+    margin-top: $space-s;
+  }
+
+  &_m {
+    margin-top: $space-m;
+  }
+
+  &_l {
+    margin-top: $space-l;
+  }
+
+  &_xl {
+    margin-top: $space-xl;
+  }
+}

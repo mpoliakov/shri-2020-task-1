@@ -1,0 +1,7 @@
+@import "../../variables";
+
+.list__item_space-b {
+  &_s {
+    padding-bottom: $space-s;
+  }
+}

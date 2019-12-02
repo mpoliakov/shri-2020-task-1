@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.section_space-v {
+  &_xxl {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+
+  &_xxxxl {
+    padding-top: $space-xxxxl;
+    padding-bottom: $space-xxxxl;
+  }
+}

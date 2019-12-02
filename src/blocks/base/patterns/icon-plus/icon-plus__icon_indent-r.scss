@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.icon-plus__icon_indent-r {
+  &_s {
+    margin-right: $space-s;
+  }
+
+  &_m {
+    margin-right: $space-m;
+  }
+}

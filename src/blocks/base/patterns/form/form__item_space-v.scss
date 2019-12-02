@@ -1,0 +1,48 @@
+@import "../../variables";
+
+.form__item_space-v {
+  &_xxxs {
+    paddgin-top: $space-xxxs;
+    paddgin-bottom: $space-xxxs;
+  }
+
+  &_xxs {
+    paddgin-top: $space-xxs;
+    paddgin-bottom: $space-xxs;
+  }
+
+  &_s {
+    paddgin-top: $space-s;
+    paddgin-bottom: $space-s;
+  }
+
+  &_m {
+    paddgin-top: $space-m;
+    paddgin-bottom: $space-m;
+  }
+
+  &_l {
+    paddgin-top: $space-l;
+    paddgin-bottom: $space-l;
+  }
+
+  &_xl {
+    paddgin-top: $space-xl;
+    paddgin-bottom: $space-xl;
+  }
+
+  &_xxl {
+    paddgin-top: $space-xxl;
+    paddgin-bottom: $space-xxl;
+  }
+
+  &_xxxl {
+    paddgin-top: $space-xxxl;
+    paddgin-bottom: $space-xxxl;
+  }
+
+  &_xxxxl {
+    paddgin-top: $space-xxxxl;
+    paddgin-bottom: $space-xxxxl;
+  }
+}

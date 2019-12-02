@@ -1,0 +1,16 @@
+@import "../mixins";
+
+.theme_size_default {
+  @include set-theme-sizes(
+    $font-size-s: 7px,
+    $font-size-m: 8px,
+    $font-size-l: 10px,
+    $font-size-xl: 11px,
+    $font-size-xxl: 13px,
+    $line-height-s: 18px,
+    $line-height-m: 21px,
+    $line-height-l: 25px,
+    $line-height-xl: 28px,
+    $line-height-xxl: 34px
+  );
+}

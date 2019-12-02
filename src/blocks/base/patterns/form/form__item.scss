@@ -1,0 +1,9 @@
+@import "form__item_border";
+@import "form__item_distribute";
+@import "form__item_indent-b";
+@import "form__item_space-h";
+@import "form__item_space-v";
+
+.form__item {
+  display: flex;
+}

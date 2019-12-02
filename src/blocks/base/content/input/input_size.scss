@@ -1,0 +1,23 @@
+.input_size {
+  width: 100%;
+
+  &_s {
+    height: 24px;
+  }
+
+  &_m {
+    height: 32px;
+  }
+
+  &_l {
+    height: 42px;
+  }
+
+  &_xl {
+    height: 56px;
+  }
+
+  &_xl {
+    height: 64px;
+  }
+}

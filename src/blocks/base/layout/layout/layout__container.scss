@@ -1,0 +1,8 @@
+@import "layout__container_align";
+@import "layout__container_indent-b";
+@import "layout__container_size";
+@import "layout__container_space-v";
+
+.layout__container {
+  display: flex;
+}

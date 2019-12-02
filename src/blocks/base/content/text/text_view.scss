@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.text_view {
+  &_primary {
+    color: $text-color-primary;
+  }
+
+  &_secondary {
+    color: $text-color-secondary;
+  }
+
+  &_ghost {
+    color: $text-color-additional;
+  }
+
+  &_link {
+    color: $link-color;
+  }
+}

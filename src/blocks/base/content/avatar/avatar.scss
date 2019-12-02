@@ -1,0 +1,8 @@
+@import "../../variables";
+
+@import "avatar_size";
+
+/* По умолчанию имеет такой же цвет фона, как и цвет основного текста. */
+.avatar {
+  background-color: $text-color-primary;
+}

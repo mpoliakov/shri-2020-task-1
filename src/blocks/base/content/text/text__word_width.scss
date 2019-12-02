@@ -1,0 +1,82 @@
+@import "../../variables";
+
+.text_size_s {
+  .text__word_width {
+    &_s {
+      width: 20px;
+    }
+
+    &_m {
+      width: 48px;
+    }
+
+    &_l {
+      width: 100px;
+    }
+  }
+}
+
+.text_size_m {
+  .text__word_width {
+    &_s {
+      width: 24px;
+    }
+
+    &_m {
+      width: 56px;
+    }
+
+    &_l {
+      width: 114px;
+    }
+  }
+}
+
+.text_size_l {
+  .text__word_width {
+    &_s {
+      width: 28px;
+    }
+
+    &_m {
+      width: 68px;
+    }
+
+    &_l {
+      width: 138px;
+    }
+  }
+}
+
+.text_size_xl {
+  .text__word_width {
+    &_s {
+      width: 32px;
+    }
+
+    &_m {
+      width: 74px;
+    }
+
+    &_l {
+      width: 154px;
+    }
+  }
+}
+
+.text_size_xxl {
+  .text__word_width {
+    &_s {
+      width: 36px;
+    }
+
+    &_m {
+      width: 88px;
+    }
+
+    &_l {
+      width: 184px;
+    }
+  }
+}
+
