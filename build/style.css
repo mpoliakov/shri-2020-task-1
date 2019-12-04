@@ -11,7 +11,6 @@
   --breakpoint: 1144px; }
 
 .theme_color_project-default {
-  --bg-color-default: #ffffff;
   --bg-color-accent: #ffcc00;
   --border-color: #000000;
   --text-color-primary: #000000;
@@ -20,7 +19,6 @@
   --link-color: #0077ff; }
 
 .theme_color_project-brand {
-  --bg-color-default: #0077ff;
   --bg-color-accent: #ffffff;
   --border-color: #ffffff;
   --text-color-primary: #ffffff;
@@ -29,7 +27,6 @@
   --link-color: #ffffff; }
 
 .theme_color_project-inverse {
-  --bg-color-default: #000000;
   --bg-color-accent: #ffffff;
   --border-color: #ffffff;
   --text-color-primary: #ffffff;
@@ -38,7 +35,6 @@
   --link-color: #0070f0; }
 
 .theme_color_project-warning {
-  --bg-color-default: #ff3333;
   --bg-color-accent: #ffffff;
   --border-color: #ff3333;
   --text-color-primary: #ffffff;

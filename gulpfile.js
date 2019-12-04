@@ -4,13 +4,13 @@ const gulp = require('gulp');
 
 const file = require('gulp-file');
 const argv = require('yargs').argv;
+const autoprefixer = require('autoprefixer');
 
 const plumber = require('gulp-plumber');
 const sass = require("gulp-sass");
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const minifycss = require('gulp-minify-css');
+const csso = require('gulp-csso');
 
 gulp.task('templater', async () => {
   const templater = require( './templater.js');
@@ -33,8 +33,7 @@ gulp.task('build:css', async () => {
       autoprefixer()
     ]))
     .pipe(gulp.dest('build'))
-    //.pipe(csso())
-    .pipe(minifycss())
+    .pipe(csso())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build'));
 });
