@@ -1,3 +1,5 @@
+@import "../../variables";
+
 @import "grid_m-columns";
 @import "grid_col-gap";
 @import "grid_row-gap";
@@ -8,4 +10,6 @@ $screen-m: $breakpoint;
 
 .grid {
   display: grid;
+  width: $screen-m;
+  margin: 0 auto;
 }

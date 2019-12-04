@@ -1,5 +1,11 @@
+@import "../../variables";
+
+
+
 .grid_m-columns_10 {
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .grid_m-columns_12 {
+  grid-template-columns: repeat(12, 1fr);
 }
