@@ -45,11 +45,17 @@ gulp.task('build:css', async () => {
     .pipe(gulp.dest('build'));
 });
 
+gulp.task('copy:images', async () => {
+  return gulp.src('src/**/*.{svg,jpg,png}')
+    .pipe(rename({dirname: ''}))
+    .pipe(gulp.dest('build/img'));
+});
+
 gulp.task('build:js', async () => {
   return;
 });
 
-gulp.task('build', gulp.series('build:css', 'build:js'));
+gulp.task('build', gulp.series('build:css', 'copy:images', 'build:js'));
 
 gulp.task('refresh', async (done) => {
   server.reload();
@@ -71,3 +77,4 @@ gulp.task('server', async () => {
 });
 
 gulp.task('start', gulp.series('build', 'server'));
+

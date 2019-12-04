@@ -87,7 +87,7 @@ theme_gap_small {
   grid-template-columns: repeat(12, 1fr); }
 
 .grid_col-gap_half {
-  grid-column-gap: 1rem / 2; }
+  grid-column-gap: 0.5rem; }
 
 .grid_col-gap_two-thirds {
   grid-column-gap: 0.66667rem; }
@@ -96,7 +96,7 @@ theme_gap_small {
   grid-column-gap: 1rem; }
 
 .grid_row-gap_half {
-  grid-row-gap: 1rem / 2; }
+  grid-row-gap: 0.5rem; }
 
 .grid_row-gap_full {
   grid-row-gap: 1rem; }
@@ -528,14 +528,14 @@ theme_gap_small {
 .button {
   background-color: var(--bg-color-accent); }
 
-/*
-Блок служит для отображения изображений. Растягивается на всю ширину, имеет сплошную границу шириной 3px и содержит заглушку. Заглушка, цвета фона и границы задаются темой или стилями контентного блока.
-
-Изображения с темой project-default имеют заглушку черного цвета.
-Изображения с темами project-inverse и project-brand имеют заглушку белого цвета.
- */
 .image {
-  background-image: url("/assets/images/image-placeholder-primary.svg"); }
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--border-color); }
+  .theme_color_project-default .image {
+    background: url("/img/image-placeholder-primary.svg") center center no-repeat var(--bg-color-default); }
+  .theme_color_project-inverse .image, .image .theme_color_project-brand {
+    background: url("/img/image-placeholder-inverse.svg") center center no-repeat var(--bg-color-default); }
 
 .input_size {
   width: 100%; }
@@ -662,3 +662,11 @@ theme_gap_small {
     height: var(--font-size-xl); }
   .text_size_xxl .text__word {
     height: var(--font-size-xxl); }
+
+.product__image {
+  width: 160px;
+  height: 160px; }
+
+.product {
+  min-height: 300px;
+  border: 3px solid var(--border-color); }
