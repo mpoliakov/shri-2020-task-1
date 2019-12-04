@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp build",
     "stylelint": "stylelint \"src/**/*.scss\" --syntax scss",
-    "test": "npm run stylelint"
+    "test": "npm run stylelint",
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.2",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-file": "^0.4.0",
