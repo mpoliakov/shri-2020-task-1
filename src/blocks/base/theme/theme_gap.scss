@@ -1,9 +1,9 @@
 @import "../../variables";
 
 theme_gap_small {
-  --gap: #{$space-m};
+  $gap: #{$space-m};
 
   @media (min-width: #{$breakpoint}){
-    --gap: #{$space-xxxl};
+    $gap: #{$space-xxxl};
   }
 }

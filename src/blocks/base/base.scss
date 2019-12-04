@@ -1,14 +1,5 @@
-@import "mixins";
 @import "../variables";
-
-/* init variables */
-/*:root {
-  @include set-theme-colors();
-  @include set-theme-sizes();
-  @include set-theme-spaces();
-  --breakpoint: 1144px;
-  --gap: #{$space-m};
-}*/
+@import "mixins";
 
 @import "theme/theme";
 

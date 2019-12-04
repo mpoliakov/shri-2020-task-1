@@ -38,4 +38,7 @@ $breakpoint: var(--breakpoint);
 // theme/_gap
 $gap: var(--gap);
 
+:root {
+  --breakpoint: 1144px;
+}
 

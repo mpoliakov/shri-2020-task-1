@@ -1,13 +1,13 @@
-// что использовать в качестве полного отступа?
+@import "../../../variables";
 
 .grid_col-gap_half {
-  grid-column-gap: (1rem / 2);
+  grid-column-gap: ($gap / 2);
 }
 
 .grid_col-gap_two-thirds {
-  grid-column-gap: ((2 * 1rem) / 3);
+  grid-column-gap: (($gap * 2) / 3);
 }
 
 .grid_col-gap_full {
-  grid-column-gap: 1rem;
+  grid-column-gap: $gap;
 }
