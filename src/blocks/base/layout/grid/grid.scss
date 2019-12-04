@@ -5,3 +5,7 @@
 
 // Ширина экрана screen-m совпадает с шириной брейкпойнта и равна 1144px.
 $screen-m: $breakpoint;
+
+.grid {
+  display: grid;
+}

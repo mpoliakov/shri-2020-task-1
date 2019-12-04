@@ -80,6 +80,9 @@ theme_gap_small {
 .theme {
   box-sizing: border-box; }
 
+.grid {
+  display: grid; }
+
 .layout__container_align_center {
   margin: 0 auto; }
 
