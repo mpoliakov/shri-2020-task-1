@@ -8,4 +8,8 @@
 
 .list__item {
   display: flex;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }

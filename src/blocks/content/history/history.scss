@@ -1,3 +1,4 @@
+@import "../../variables";
 @import "history__actions";
 @import "history__description";
 @import "history__destination";
@@ -12,3 +13,7 @@
 @import "history__time";
 @import "history__transaction";
 @import "history__transaction_brand";
+
+.history {
+  border: 3px solid $border-color;
+}
