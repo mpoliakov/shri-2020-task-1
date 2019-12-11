@@ -301,7 +301,8 @@ template {
   display: none; }
 
 :root {
-  --breakpoint: 1144px; }
+  --breakpoint: 1024px;
+  --max-width: 1280px; }
 
 html {
   box-sizing: border-box; }
@@ -344,7 +345,7 @@ img {
   --text-color-primary: #ffffff;
   --text-color-secondary: rgba(255, 255, 255, 0.6);
   --text-color-additional: rgba(255, 255, 255, 0.3);
-  --link-color: #0070f0; }
+  --link-color: #0077ff; }
 
 .theme_color_project-warning {
   --bg-color-default: #ff3333;
@@ -362,16 +363,16 @@ img {
   $gap: var(--space-m);
 }*/
 .theme_size_default {
-  --font-size-s: 7px;
-  --font-size-m: 8px;
-  --font-size-l: 10px;
-  --font-size-xl: 11px;
-  --font-size-xxl: 13px;
-  --line-height-s: 18px;
-  --line-height-m: 21px;
-  --line-height-l: 25px;
-  --line-height-xl: 28px;
-  --line-height-xxl: 34px; }
+  --font-size-s: 8px;
+  --font-size-m: 10px;
+  --font-size-l: 11px;
+  --font-size-xl: 13px;
+  --font-size-xxl: 16px;
+  --line-height-s: 21px;
+  --line-height-m: 25px;
+  --line-height-l: 28px;
+  --line-height-xl: 24px;
+  --line-height-xxl: 38px; }
 
 .theme_space_default {
   --space-xxxs: 2px;
@@ -912,16 +913,16 @@ img {
 параграф — margin 15px x 21px.
  */
 .text_type_h1 {
-  margin: 18px 24px; }
+  margin: 18px 0 24px; }
 
 .text_type_h2 {
-  margin: 45px 21px; }
+  margin: 45px 0 21px; }
 
 .text_type_h3 {
-  margin: 42px 0; }
+  margin: 42px 0 0; }
 
 .text_type_p {
-  margin: 15px 21px; }
+  margin: 15px 0 21px; }
 
 .text_view_primary {
   color: var(--text-color-primary); }
@@ -1002,6 +1003,9 @@ img {
   .text_view_link .text__word {
     background-color: var(--link-color); }
 
+.text {
+  margin: 15px 21px; }
+
 .event__content {
   display: -webkit-box;
   display: flex;
@@ -1037,7 +1041,7 @@ img {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
-  max-width: 1280px;
+  max-width: var(--max-width);
   margin: 0 auto; }
 
 .footer {
@@ -1050,7 +1054,7 @@ img {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
-  max-width: 1280px;
+  max-width: var(--max-width);
   margin: 0 auto; }
 
 .header__logo {

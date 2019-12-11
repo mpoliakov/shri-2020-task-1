@@ -38,4 +38,4 @@ $breakpoint: var(--breakpoint);
 // theme/_gap
 $gap: var(--gap);
 
-$max-width: 1280px;
+$max-width: var(--max-width);

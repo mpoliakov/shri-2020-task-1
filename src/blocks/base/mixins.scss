@@ -16,16 +16,16 @@
 }
 
 @mixin set-theme-sizes(
-  $font-size-s: 7px,
-  $font-size-m: 8px,
-  $font-size-l: 10px,
-  $font-size-xl: 11px,
-  $font-size-xxl: 13px,
-  $line-height-s: 18px,
-  $line-height-m: 21px,
-  $line-height-l: 25px,
-  $line-height-xl: 28px,
-  $line-height-xxl: 34px
+  $font-size-s: 8px,
+  $font-size-m: 10px,
+  $font-size-l: 11px,
+  $font-size-xl: 13px,
+  $font-size-xxl: 16px,
+  $line-height-s: 21px,
+  $line-height-m: 25px,
+  $line-height-l: 28px,
+  $line-height-xl: 24px,
+  $line-height-xxl: 38px
 ) {
   --font-size-s: #{$font-size-s};
   --font-size-m: #{$font-size-m};
@@ -40,16 +40,16 @@
 }
 
 @mixin set-theme-spaces(
-  $space-xxxs: 2px,
-  $space-xxs: 4px,
-  $space-xs: 8px,
-  $space-s: 12px,
-  $space-m: 16px,
-  $space-l: 20px,
-  $space-xl: 24px,
-  $space-xxl: 32px,
-  $space-xxxl: 40px,
-  $space-xxxxl: 48px,
+  $space-xxxs: 3px,
+  $space-xxs: 6px,
+  $space-xs: 9px,
+  $space-s: 15px,
+  $space-m: 18px,
+  $space-l: 24px,
+  $space-xl: 27px,
+  $space-xxl: 36px,
+  $space-xxxl: 45px,
+  $space-xxxxl: 51px,
   $space-xxxxxl: 72px
 ) {
   --space-xxxs: #{$space-xxxs};
