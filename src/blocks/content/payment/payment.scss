@@ -1,0 +1,8 @@
+@import "../../variables";
+@import "payment__content";
+@import "payment__footer";
+@import "payment__header";
+
+.payment {
+  border: 3px solid $border-color;
+}

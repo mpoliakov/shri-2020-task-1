@@ -1,0 +1,7 @@
+@import "warning__button-wrapper";
+@import "warning__content";
+
+.warning {
+  display: flex;
+  flex-direction: column;
+}

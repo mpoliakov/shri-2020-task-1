@@ -1,0 +1,11 @@
+@import "event__content";
+@import "event__description";
+@import "event__footer";
+@import "event__preview";
+@import "event__speaker";
+@import "event__title";
+@import "event_brand";
+
+.event {
+  min-height: 400px;
+}

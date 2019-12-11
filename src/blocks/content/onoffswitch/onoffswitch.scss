@@ -1,0 +1,13 @@
+@import "../../variables";
+
+@import "onoffswitch__button";
+@import "onoffswitch_checked";
+
+.onoffswitch {
+  display: flex;
+  align-items: center;
+  width: 97px;
+  height: 32px;
+  padding: 2px;
+  border: 2px solid $border-color;
+}

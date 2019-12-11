@@ -1,17 +1,23 @@
 @import "../../../variables";
 
-.card__content_space-a_m {
-  padding: $space-m;
-}
+.card__content_space-a {
+  &_m {
+    padding: $space-m;
+  }
 
-.card__content_space-a_l {
-  padding: $space-l;
-}
+  &_l {
+    padding: $space-l;
+  }
 
-.card__content_space-a_xl {
-  padding: $space-xl
-}
+  &_xl {
+    padding: $space-xl
+  }
 
-.card__content_space-a_xxl {
-  padding: $space-xxl;
+  &_xxl {
+    padding: $space-xxl;
+  }
+
+  &_xxxl {
+    padding: $space-xxxl;
+  }
 }

@@ -1,7 +1,9 @@
+@import "../../../variables";
 @import "text__word_width";
 
 .text__word {
   display: inline-block;
+  background-color: $text-color-primary;
 
   .text_size_s & {
     height: $font-size-s;
@@ -21,5 +23,21 @@
 
   .text_size_xxl & {
     height: $font-size-xxl;
+  }
+
+  .text_view_primary & {
+    background-color: $text-color-primary;
+  }
+
+  .text_view_secondary & {
+    background-color: $text-color-secondary;
+  }
+
+  .text_view_ghost & {
+    background-color: $text-color-additional;
+  }
+
+  .text_view_link & {
+    background-color: $link-color;
   }
 }

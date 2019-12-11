@@ -3,5 +3,7 @@
 @import "card__footer_vertical-align";
 
 .card__footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
 }

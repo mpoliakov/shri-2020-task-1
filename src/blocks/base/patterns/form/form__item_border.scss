@@ -2,4 +2,8 @@
 
 .form__item_border_bottom {
   border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none; /* У последнего пункта в списке при использовании модификатора border со значением bottom обнуляются стили на границу во избежание пересечения с круговой границей самого блока. */
+  }
 }
