@@ -1,5 +1,11 @@
+@import "../../variables";
+
 .warning__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .placeholder {
+    margin: $space-m;
+  }
 }

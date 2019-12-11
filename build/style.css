@@ -318,7 +318,7 @@ img {
   height: auto; }
 
 .theme_breakpoint_default {
-  --breakpoint: 1144px; }
+  --breakpoint: var(--breakpoint); }
 
 .theme_color_project-default {
   --bg-color-default: #ffffff;
@@ -375,16 +375,16 @@ img {
   --line-height-xxl: 38px; }
 
 .theme_space_default {
-  --space-xxxs: 2px;
-  --space-xxs: 4px;
-  --space-xs: 8px;
-  --space-s: 12px;
-  --space-m: 16px;
-  --space-l: 20px;
-  --space-xl: 24px;
-  --space-xxl: 32px;
-  --space-xxxl: 40px;
-  --space-xxxxl: 48px;
+  --space-xxxs: 3px;
+  --space-xxs: 6px;
+  --space-xs: 9px;
+  --space-s: 15px;
+  --space-m: 18px;
+  --space-l: 24px;
+  --space-xl: 27px;
+  --space-xxl: 36px;
+  --space-xxxl: 45px;
+  --space-xxxxl: 51px;
   --space-xxxxxl: 72px; }
 
 .theme {
@@ -543,7 +543,7 @@ img {
   background-color: var(--bg-color-default); }
 
 .form__item_border_bottom {
-  border-bottom: 1px solid var(--border-color); }
+  border-bottom: 3px solid var(--border-color); }
   .form__item_border_bottom:last-child {
     border-bottom: none;
     /* У последнего пункта в списке при использовании модификатора border со значением bottom обнуляются стили на границу во избежание пересечения с круговой границей самого блока. */ }
@@ -616,44 +616,46 @@ img {
   padding-right: var(--space-xxxxl); }
 
 .form__item_space-v_xxxs {
-  paddgin-top: var(--space-xxxs);
-  paddgin-bottom: var(--space-xxxs); }
+  padding-top: var(--space-xxxs);
+  padding-bottom: var(--space-xxxs); }
 
 .form__item_space-v_xxs {
-  paddgin-top: var(--space-xxs);
-  paddgin-bottom: var(--space-xxs); }
+  padding-top: var(--space-xxs);
+  padding-bottom: var(--space-xxs); }
 
 .form__item_space-v_s {
-  paddgin-top: var(--space-s);
-  paddgin-bottom: var(--space-s); }
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s); }
 
 .form__item_space-v_m {
-  paddgin-top: var(--space-m);
-  paddgin-bottom: var(--space-m); }
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m); }
 
 .form__item_space-v_l {
-  paddgin-top: var(--space-l);
-  paddgin-bottom: var(--space-l); }
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l); }
 
 .form__item_space-v_xl {
-  paddgin-top: var(--space-xl);
-  paddgin-bottom: var(--space-xl); }
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl); }
 
 .form__item_space-v_xxl {
-  paddgin-top: var(--space-xxl);
-  paddgin-bottom: var(--space-xxl); }
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl); }
 
 .form__item_space-v_xxxl {
-  paddgin-top: var(--space-xxxl);
-  paddgin-bottom: var(--space-xxxl); }
+  padding-top: var(--space-xxxl);
+  padding-bottom: var(--space-xxxl); }
 
 .form__item_space-v_xxxxl {
-  paddgin-top: var(--space-xxxxl);
-  paddgin-bottom: var(--space-xxxxl); }
+  padding-top: var(--space-xxxxl);
+  padding-bottom: var(--space-xxxxl); }
 
 .form__item {
   display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
+          align-items: center;
   width: 100%; }
 
 /*
@@ -850,7 +852,6 @@ img {
 
 .button {
   width: 200px;
-  height: 32px;
   background-color: var(--bg-color-accent); }
 
 .image {
@@ -906,12 +907,6 @@ img {
 .text_size_xxl {
   font-size: var(--font-size-xxl); }
 
-/*
-заголовок первого уровня — margin 18px x 24px;
-заголовок второго уровня — margin 45px x 21px;
-заголовок третьего уровня — margin 42px x 0;
-параграф — margin 15px x 21px.
- */
 .text_type_h1 {
   margin: 18px 0 24px; }
 
@@ -985,15 +980,20 @@ img {
   display: inline-block;
   background-color: var(--text-color-primary); }
   .text_size_s .text__word {
-    height: var(--font-size-s); }
+    height: var(--font-size-s);
+    margin: var(--font-size-m) 0; }
   .text_size_m .text__word {
-    height: var(--font-size-m); }
+    height: var(--font-size-m);
+    margin: var(--font-size-m) 0; }
   .text_size_l .text__word {
-    height: var(--font-size-l); }
+    height: var(--font-size-l);
+    margin: var(--font-size-m) 0; }
   .text_size_xl .text__word {
-    height: var(--font-size-xl); }
+    height: var(--font-size-xl);
+    margin: var(--font-size-m) 0; }
   .text_size_xxl .text__word {
-    height: var(--font-size-xxl); }
+    height: var(--font-size-xxl);
+    margin: var(--font-size-m) 0; }
   .text_view_primary .text__word {
     background-color: var(--text-color-primary); }
   .text_view_secondary .text__word {
@@ -1002,9 +1002,6 @@ img {
     background-color: var(--text-color-additional); }
   .text_view_link .text__word {
     background-color: var(--link-color); }
-
-.text {
-  margin: 15px 21px; }
 
 .event__content {
   display: -webkit-box;
@@ -1084,7 +1081,25 @@ img {
   padding: 2px;
   border: 2px solid var(--border-color); }
 
+.payment__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .payment__content .form__item:last-child {
+    margin-bottom: 0; }
+
+.payment__footer .button {
+  margin-left: auto; }
+
 .payment {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: 335px;
   border: 3px solid var(--border-color); }
 
 .product__content {
@@ -1119,10 +1134,13 @@ img {
           flex-direction: column;
   -webkit-box-align: center;
           align-items: center; }
+  .warning__content .placeholder {
+    margin: var(--space-m); }
 
 .warning {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column; }
+          flex-direction: column;
+  min-height: 335px; }

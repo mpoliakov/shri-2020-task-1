@@ -1,0 +1,8 @@
+.payment__content {
+  display: flex;
+  flex-direction: column;
+
+  .form__item:last-child {
+    margin-bottom: 0;
+  }
+}
