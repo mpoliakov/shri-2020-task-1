@@ -1005,6 +1005,9 @@ img {
   .text_view_link .text__word {
     background-color: var(--link-color); }
 
+.text {
+  vertical-align: text-top; }
+
 .event__content {
   display: -webkit-box;
   display: flex;
@@ -1161,6 +1164,9 @@ img {
   -webkit-box-direction: normal;
           flex-direction: column; }
 
+.warning__button-wrapper {
+  margin-top: 5px; }
+
 .warning__content {
   display: -webkit-box;
   display: flex;
@@ -1169,6 +1175,8 @@ img {
           flex-direction: column;
   -webkit-box-align: center;
           align-items: center; }
+  .warning__content .text {
+    line-height: 34px; }
   .warning__content .placeholder {
     margin: var(--space-m); }
 
