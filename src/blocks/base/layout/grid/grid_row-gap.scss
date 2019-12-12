@@ -1,9 +1,11 @@
 @import "../../../variables";
 
-.grid_row-gap_half {
-  grid-row-gap: ($gap / 2);
-}
+.grid_row-gap {
+  &_half {
+    grid-row-gap: ($gap / 2);
+  }
 
-.grid_row-gap_full {
-  grid-row-gap: $gap;
+  &_full {
+    grid-row-gap: $gap;
+  }
 }

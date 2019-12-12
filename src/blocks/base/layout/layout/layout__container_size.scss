@@ -1,9 +1,9 @@
 @import "../../../variables";
 
 .layout__container_size_s {
-  width: 920px;
+  max-width: 920px;
 }
 
 .layout__container_size_m {
-  width: $max-width;
+  max-width: $max-width;
 }

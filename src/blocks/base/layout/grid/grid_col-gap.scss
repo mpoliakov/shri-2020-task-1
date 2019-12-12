@@ -1,13 +1,15 @@
 @import "../../../variables";
 
-.grid_col-gap_half {
-  grid-column-gap: calc(#{$gap} / 2);
-}
+.grid_col-gap {
+  &_half {
+    grid-column-gap: calc(#{$gap} / 2);
+  }
 
-.grid_col-gap_two-thirds {
-  grid-column-gap: calc((#{$gap} * 2) / 3);
-}
+  &_two-thirds {
+    grid-column-gap: calc((#{$gap} * 2) / 3);
+  }
 
-.grid_col-gap_full {
-  grid-column-gap: $gap;
+  &_full {
+    grid-column-gap: $gap;
+  }
 }
