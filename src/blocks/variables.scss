@@ -32,10 +32,10 @@ $space-xxxl: var(--space-xxxl);
 $space-xxxxl: var(--space-xxxxl);
 $space-xxxxxl: var(--space-xxxxxl);
 
-// theme/_breakpoint
-$breakpoint: var(--breakpoint);
-
 // theme/_gap
 $gap: var(--gap);
 
-$max-width: var(--max-width);
+// theme/_breakpoint
+$breakpoint: 1024px;
+
+$max-width: 1280px;

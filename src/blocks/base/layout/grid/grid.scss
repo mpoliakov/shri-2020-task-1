@@ -13,8 +13,9 @@ $screen-m: $breakpoint;
   margin: 0 auto;
 }
 
-@media (max-width: #{$breakpoint}){
+@media (max-width: $breakpoint){
   .grid {
-    min-width: $screen-m;
+    display: flex;
+    flex-direction: column;
   }
 }

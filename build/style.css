@@ -300,10 +300,6 @@ template {
 [hidden] {
   display: none; }
 
-:root {
-  --breakpoint: 1024px;
-  --max-width: 1280px; }
-
 html {
   box-sizing: border-box; }
 
@@ -318,7 +314,7 @@ img {
   height: auto; }
 
 .theme_breakpoint_default {
-  --breakpoint: var(--breakpoint); }
+  --breakpoint: 1024px; }
 
 .theme_color_project-default {
   --bg-color-default: #ffffff;
@@ -359,7 +355,7 @@ img {
 .theme_gap_small {
   --gap: var(--space-xl); }
 
-/*@media (max-width: var(--breakpoint)){
+/*@media (max-width: 1024px){
   $gap: var(--space-m);
 }*/
 .theme_size_default {
@@ -430,9 +426,13 @@ img {
   display: grid;
   margin: 0 auto; }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 1024px) {
   .grid {
-    min-width: var(--breakpoint); } }
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; } }
 
 .layout__container_align_center {
   margin: 0 auto; }
@@ -447,7 +447,7 @@ img {
   width: 920px; }
 
 .layout__container_size_m {
-  width: var(--max-width); }
+  width: 1280px; }
 
 .layout__container_space-v_xxxxl {
   padding: var(--space-xxxxl) 0; }
@@ -457,7 +457,7 @@ img {
 
 .layout {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1280px;
   margin: 0 auto; }
 
 .card_border_all {
@@ -861,7 +861,7 @@ img {
 .image {
   width: 100%;
   height: 100%;
-  border: 3px solid var(--border-color); }
+  border: 3px solid var(--bg-color-default); }
   .theme_color_project-default .image {
     background: url("/img/image-placeholder-primary.svg") center center no-repeat var(--bg-color-default); }
   .theme_color_project-inverse .image, .image .theme_color_project-brand {
@@ -1043,7 +1043,7 @@ img {
   -webkit-box-align: center;
           align-items: center;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1280px;
   margin: 0 auto; }
 
 .footer {
@@ -1058,7 +1058,7 @@ img {
   -webkit-box-align: center;
           align-items: center;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1280px;
   margin: 0 auto; }
 
 .header__logo {

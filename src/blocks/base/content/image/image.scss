@@ -3,7 +3,7 @@
 .image {
   width: 100%;
   height: 100%;
-  border: 3px solid $border-color;
+  border: 3px solid $bg-color-default;
 
   .theme_color_project-default & {
     background: url("/img/image-placeholder-primary.svg") center center no-repeat $bg-color-default;
