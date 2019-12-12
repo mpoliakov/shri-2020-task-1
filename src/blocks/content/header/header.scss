@@ -2,6 +2,15 @@
 @import "header__logo";
 
 .header {
-  padding: $space-xxxl $gap;
+  width: 100%;
+  max-width: $max-width;
+  padding: $space-xxxl 0;
   margin: 0 auto;
+  background-color: $bg-color-default;
+}
+
+@media (max-width: $breakpoint) {
+  .header {
+    padding: $space-xxxl $gap;
+  }
 }

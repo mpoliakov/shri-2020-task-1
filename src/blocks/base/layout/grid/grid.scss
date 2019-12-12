@@ -5,11 +5,10 @@
 @import "grid_row-gap";
 @import "grid__fraction";
 
-$screen-m: $breakpoint;
+//$screen-m: $breakpoint;
 
 .grid {
   display: grid;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -17,5 +16,6 @@ $screen-m: $breakpoint;
   .grid {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
