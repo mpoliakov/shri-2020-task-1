@@ -12,6 +12,12 @@ const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const csso = require('gulp-csso');
 
+const babelify = require('babelify');
+const browserify = require('browserify');
+const uglify = require('gulp-uglify');
+const buffer = require('vinyl-buffer');
+const source = require('vinyl-source-stream');
+
 const server = require('browser-sync').create();
 
 gulp.task('templater', async () => {
@@ -29,7 +35,7 @@ gulp.task('templater', async () => {
 /*
 Example:
 gulp templater --path './assets/pages/index.json' --file 'index_content.html'
-gulp templater --path './assets/pages/product.json' --file 'product_content.html'
+gulp templater --path './assets/pages/product.json' --file product_content.html'
  */
 
 gulp.task('build:css', async () => {
@@ -52,7 +58,19 @@ gulp.task('copy:images', async () => {
 });
 
 gulp.task('build:js', async () => {
-  return;
+  return browserify({
+    entries: ['src/script.js']
+  })
+    .transform(babelify.configure({
+      presets : ['@babel/preset-env']
+    }))
+    .bundle()
+    .pipe(source("script.js"))
+    .pipe(gulp.dest('build'))
+    .pipe(buffer())
+    .pipe(uglify())
+    .pipe(rename('script.min.js'))
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('build', gulp.series('build:css', 'copy:images', 'build:js'));
@@ -65,7 +83,7 @@ gulp.task('refresh', async (done) => {
 gulp.task('server', async () => {
   server.init({
     server: './build',
-    startPath: "/index.html",
+    startPath: '/index.html',
     notify: false,
     open: true,
     cors: true,
@@ -73,7 +91,7 @@ gulp.task('server', async () => {
   });
 
   gulp.watch('src/**/*.scss', gulp.series('build:css', 'refresh'));
-  //gulp.watch('build/*.html', gulp.series('refresh'));
+  gulp.watch('src/**/*.js', gulp.series('build:js', 'refresh'));
 });
 
 gulp.task('start', gulp.series('build', 'server'));

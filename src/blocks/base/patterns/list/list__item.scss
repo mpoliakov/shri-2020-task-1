@@ -8,6 +8,8 @@
 
 .list__item {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   &:first-child {
     margin-top: 0;
