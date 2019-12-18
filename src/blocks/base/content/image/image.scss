@@ -6,10 +6,10 @@
   border: 3px solid $bg-color-default;
 
   .theme_color_project-default & {
-    background: url("/img/image-placeholder-primary.svg") center center no-repeat $bg-color-default;
+    background: url("img/image-placeholder-primary.svg") center center no-repeat $bg-color-default;
   }
 
   .theme_color_project-inverse &, .theme_color_project-brand {
-    background: url("/img/image-placeholder-inverse.svg") center center no-repeat $bg-color-default;
+    background: url("img/image-placeholder-inverse.svg") center center no-repeat $bg-color-default;
   }
 }
