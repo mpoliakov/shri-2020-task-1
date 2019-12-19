@@ -369,7 +369,7 @@ img {
   --line-height-s: 21px;
   --line-height-m: 25px;
   --line-height-l: 28px;
-  --line-height-xl: 24px;
+  --line-height-xl: 34px;
   --line-height-xxl: 38px; }
 
 .theme_space_default {
@@ -1012,7 +1012,7 @@ img {
 
 .text__word {
   display: inline-block;
-  vertical-align: text-bottom;
+  vertical-align: middle;
   background-color: var(--text-color-primary); }
   .text_size_s .text__word {
     height: var(--font-size-s);
@@ -1054,7 +1054,7 @@ img {
 
 .event__footer {
   width: 100%;
-  margin: var(--space-xs) 0; }
+  margin: var(--space-xxxs) 0; }
 
 .event__preview {
   width: 100%;
@@ -1227,8 +1227,6 @@ img {
   -webkit-box-align: center;
           align-items: center;
   margin-bottom: 7px; }
-  .warning__content .text {
-    line-height: 34px; }
   .warning__content .placeholder {
     margin: var(--space-m); }
 

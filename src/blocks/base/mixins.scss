@@ -6,7 +6,6 @@
   $link-color: #0077ff
 ) {
   --bg-color-default: #{$bg-color-default};
-  //$bg-color-default: $bg-color-default !global;
   --bg-color-accent: #{$bg-color-accent};
   --border-color: #{$border-color};
   --text-color-primary: #{$text-color};
@@ -24,7 +23,7 @@
   $line-height-s: 21px,
   $line-height-m: 25px,
   $line-height-l: 28px,
-  $line-height-xl: 24px,
+  $line-height-xl: 34px,
   $line-height-xxl: 38px
 ) {
   --font-size-s: #{$font-size-s};
