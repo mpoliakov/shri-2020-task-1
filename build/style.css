@@ -424,6 +424,21 @@ img {
 .grid__fraction_m-col_8 {
   grid-column: span 8; }
 
+@media (max-width: 1024px) {
+  .grid__fraction_m-col_2 {
+    margin-bottom: var(--space-xs); }
+  .grid__fraction_m-col_3,
+  .grid__fraction_m-col_4,
+  .grid__fraction_m-col_5,
+  .grid__fraction_m-col_8 {
+    margin-bottom: var(--space-s); }
+  .grid__fraction_m-col_2:last-child,
+  .grid__fraction_m-col_3:last-child,
+  .grid__fraction_m-col_4:last-child,
+  .grid__fraction_m-col_5:last-child,
+  .grid__fraction_m-col_8:last-child {
+    margin-bottom: 0; } }
+
 .grid__fraction {
   width: 100%; }
 
@@ -1096,7 +1111,7 @@ img {
 
 @media (max-width: 1024px) {
   .footer {
-    padding: var(--space-xxxl) var(--gap); } }
+    padding: var(--space-xxxl) var(--space-s); } }
 
 .header__content {
   display: -webkit-box;
@@ -1123,7 +1138,7 @@ img {
 
 @media (max-width: 1024px) {
   .header {
-    padding: var(--space-xxxl) var(--gap); } }
+    padding: var(--space-xxxl) var(--space-s); } }
 
 .history__details {
   display: -webkit-box;
