@@ -73,7 +73,7 @@ gulp.task('build:js', async () => {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('build', gulp.series('build:css', 'copy:images', 'build:js'));
+gulp.task('build', gulp.series('build:css', 'build:js'));
 
 gulp.task('refresh', async (done) => {
   server.reload();
