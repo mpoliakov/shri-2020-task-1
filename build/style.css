@@ -1228,7 +1228,7 @@ img {
           align-items: center;
   margin-bottom: 7px; }
   .warning__content .placeholder {
-    margin: var(--space-m); }
+    margin: var(--space-m) 0; }
 
 .warning {
   display: -webkit-box;
