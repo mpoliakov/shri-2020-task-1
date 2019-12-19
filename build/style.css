@@ -1226,9 +1226,11 @@ img {
           flex-direction: column;
   -webkit-box-align: center;
           align-items: center;
-  margin-bottom: 7px; }
+  margin-bottom: var(--space-xxs); }
   .warning__content .placeholder {
     margin: var(--space-m) 0; }
+  .warning__content .text__word {
+    vertical-align: text-top; }
 
 .warning {
   display: -webkit-box;

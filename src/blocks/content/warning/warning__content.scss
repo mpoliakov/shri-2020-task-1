@@ -4,9 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: $space-xxs;
 
   .placeholder {
     margin: $space-m 0;
+  }
+
+  .text__word {
+    vertical-align: text-top;
   }
 }
