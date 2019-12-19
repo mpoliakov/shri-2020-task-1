@@ -13,3 +13,36 @@
     grid-column-gap: $gap;
   }
 }
+
+@media (max-width: $breakpoint) {
+  .grid_col-gap_half {
+
+    .grid__fraction {
+      margin-bottom: calc(#{$gap} / 2);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .grid_col-gap_two-thirds {
+    .grid__fraction {
+      margin-bottom: calc((#{$gap} * 2) / 3);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .grid_col-gap_full {
+    .grid__fraction {
+      margin-bottom: $gap;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

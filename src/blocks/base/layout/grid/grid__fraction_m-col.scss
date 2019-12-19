@@ -1,5 +1,3 @@
-@import "../../../variables";
-
 .grid__fraction_m-col_2 {
   grid-column: span 2;
 }
@@ -18,29 +16,5 @@
 
 .grid__fraction_m-col_8 {
   grid-column: span 8;
-}
-
-@media (max-width: $breakpoint) {
-  .grid__fraction_m-col_2,
-  {
-    margin-bottom: $space-xs;
-  }
-
-  .grid__fraction_m-col_3,
-  .grid__fraction_m-col_4,
-  .grid__fraction_m-col_5,
-  .grid__fraction_m-col_8 {
-    margin-bottom: $space-s;
-  }
-
-  .grid__fraction_m-col_2,
-  .grid__fraction_m-col_3,
-  .grid__fraction_m-col_4,
-  .grid__fraction_m-col_5,
-  .grid__fraction_m-col_8 {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 

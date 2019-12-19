@@ -7,5 +7,9 @@
 }
 
 @media (max-width: $breakpoint){
-  --gap: #{$space-m};
+  .theme_gap {
+    &_small {
+      --gap: #{$space-s};
+    }
+  }
 }

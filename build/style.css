@@ -358,7 +358,8 @@ img {
   --gap: var(--space-xl); }
 
 @media (max-width: 1024px) {
-  --gap: var(--space-m); }
+  .theme_gap_small {
+    --gap: var(--space-s); } }
 
 .theme_size_default {
   --font-size-s: 8px;
@@ -403,6 +404,20 @@ img {
 .grid_col-gap_full {
   grid-column-gap: var(--gap); }
 
+@media (max-width: 1024px) {
+  .grid_col-gap_half .grid__fraction {
+    margin-bottom: calc(var(--gap) / 2); }
+    .grid_col-gap_half .grid__fraction:last-child {
+      margin-bottom: 0; }
+  .grid_col-gap_two-thirds .grid__fraction {
+    margin-bottom: calc((var(--gap) * 2) / 3); }
+    .grid_col-gap_two-thirds .grid__fraction:last-child {
+      margin-bottom: 0; }
+  .grid_col-gap_full .grid__fraction {
+    margin-bottom: var(--gap); }
+    .grid_col-gap_full .grid__fraction:last-child {
+      margin-bottom: 0; } }
+
 .grid_row-gap_half {
   grid-row-gap: var(--gap)/2; }
 
@@ -424,33 +439,6 @@ img {
 .grid__fraction_m-col_8 {
   grid-column: span 8; }
 
-@media (max-width: 1024px) {
-  .grid__fraction_m-col_2 {
-    margin-bottom: var(--space-xs); }
-  .grid__fraction_m-col_3,
-  .grid__fraction_m-col_4,
-  .grid__fraction_m-col_5,
-  .grid__fraction_m-col_8 {
-    margin-bottom: var(--space-s); }
-  .grid__fraction_m-col_2:last-child,
-  .grid__fraction_m-col_3:last-child,
-  .grid__fraction_m-col_4:last-child,
-  .grid__fraction_m-col_5:last-child,
-  .grid__fraction_m-col_8:last-child {
-    margin-bottom: 0; } }
-
-.grid__fraction {
-  width: 100%; }
-
-@media (max-width: 1024px) {
-  .grid__fraction {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    width: 100%; } }
-
 .grid {
   display: grid;
   margin: 0 auto; }
@@ -461,8 +449,7 @@ img {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
-    width: 100%; } }
+            flex-direction: column; } }
 
 .layout__container_align_center {
   margin: 0 auto; }
@@ -1109,7 +1096,7 @@ img {
   margin: 0 auto;
   background-color: var(--bg-color-default); }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .footer {
     padding: var(--space-xxxl) var(--space-s); } }
 
@@ -1136,7 +1123,7 @@ img {
   margin: 0 auto;
   background-color: var(--bg-color-default); }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .header {
     padding: var(--space-xxxl) var(--space-s); } }
 
@@ -1232,6 +1219,9 @@ img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column; }
+
+.warning__button-wrapper {
+  margin-top: auto; }
 
 .warning__content {
   display: -webkit-box;

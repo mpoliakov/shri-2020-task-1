@@ -1,14 +1,3 @@
 @import "../../../variables";
 @import "grid__fraction_m-col";
 
-.grid__fraction {
-  width: 100%;
-}
-
-@media (max-width: $breakpoint) {
-  .grid__fraction {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-}

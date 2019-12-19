@@ -9,7 +9,7 @@
   background-color: $bg-color-default;
 }
 
-@media (max-width: $breakpoint) {
+@media (max-width: $max-width) {
   .header {
     padding: $space-xxxl $space-s;
   }
