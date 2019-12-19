@@ -1,6 +1,8 @@
 const onoffswitchHandler = (clickEvent) => {
-  if (clickEvent.target.classList.contains('onoffswitch')) {
-    clickEvent.target.classList.toggle('onoffswitch_checked');
+  const onoffswitchEl = clickEvent.target.closest('.onoffswitch');
+
+  if (onoffswitchEl) {
+    onoffswitchEl.classList.toggle('onoffswitch_checked');
 
     const themeElements = document.querySelectorAll('.theme');
 

@@ -28,8 +28,10 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 
 var onoffswitchHandler = function onoffswitchHandler(clickEvent) {
-  if (clickEvent.target.classList.contains('onoffswitch')) {
-    clickEvent.target.classList.toggle('onoffswitch_checked');
+  var onoffswitchEl = clickEvent.target.closest('.onoffswitch');
+
+  if (onoffswitchEl) {
+    onoffswitchEl.classList.toggle('onoffswitch_checked');
     var themeElements = document.querySelectorAll('.theme');
 
     if (themeElements && themeElements.length) {
