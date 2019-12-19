@@ -1012,7 +1012,7 @@ img {
 
 .text__word {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   background-color: var(--text-color-primary); }
   .text_size_s .text__word {
     height: var(--font-size-s);
@@ -1037,9 +1037,6 @@ img {
     background-color: var(--text-color-additional); }
   .text_view_link .text__word {
     background-color: var(--link-color); }
-
-.text {
-  vertical-align: text-top; }
 
 .e-accordion__more {
   display: none; }
@@ -1073,6 +1070,8 @@ img {
 .event__title {
   width: 100%;
   margin-bottom: var(--space-s); }
+  .event__title .text__word {
+    vertical-align: baseline; }
 
 .event {
   min-height: 400px; }
@@ -1182,6 +1181,9 @@ img {
 
 .payment__footer .button {
   margin-left: auto; }
+
+.payment__header .text__word {
+  vertical-align: baseline; }
 
 .payment {
   display: -webkit-box;

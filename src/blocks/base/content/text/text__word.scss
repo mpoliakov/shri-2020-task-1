@@ -3,7 +3,7 @@
 
 .text__word {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   background-color: $text-color-primary;
 
   .text_size_s & {
