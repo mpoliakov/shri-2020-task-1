@@ -1145,6 +1145,9 @@ img {
   display: -webkit-box;
   display: flex; }
 
+.history__time {
+  padding-top: var(--space-xxs); }
+
 .history__transaction {
   display: -webkit-box;
   display: flex;
