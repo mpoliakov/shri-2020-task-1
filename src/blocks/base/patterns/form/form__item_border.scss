@@ -4,6 +4,6 @@
   border-bottom: 3px solid $border-color;
 
   &:last-child {
-    border-bottom: none; /* У последнего пункта в списке при использовании модификатора border со значением bottom обнуляются стили на границу во избежание пересечения с круговой границей самого блока. */
+    border-bottom: none;
   }
 }

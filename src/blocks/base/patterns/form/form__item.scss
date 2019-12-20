@@ -3,9 +3,10 @@
 @import "form__item_indent-b";
 @import "form__item_space-h";
 @import "form__item_space-v";
+@import "form__item_vertical-align";
 
 .form__item {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   width: 100%;
 }

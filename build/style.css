@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -419,7 +418,7 @@ img {
       margin-bottom: 0; } }
 
 .grid_row-gap_half {
-  grid-row-gap: var(--gap)/2; }
+  grid-row-gap: calc(var(--gap) / 2); }
 
 .grid_row-gap_full {
   grid-row-gap: var(--gap); }
@@ -564,17 +563,13 @@ img {
   -webkit-box-direction: normal;
           flex-direction: column; }
 
-.form_border_all {
-  border: 3px solid var(--border-color); }
-
-.form_view_default {
-  background-color: var(--bg-color-default); }
+.form__item .form__control {
+  width: 65%; }
 
 .form__item_border_bottom {
   border-bottom: 3px solid var(--border-color); }
   .form__item_border_bottom:last-child {
-    border-bottom: none;
-    /* У последнего пункта в списке при использовании модификатора border со значением bottom обнуляются стили на границу во избежание пересечения с круговой границей самого блока. */ }
+    border-bottom: none; }
 
 .form__item_distribute_between {
   -webkit-box-pack: justify;
@@ -679,24 +674,26 @@ img {
   padding-top: var(--space-xxxxl);
   padding-bottom: var(--space-xxxxl); }
 
+.form__item_vertical-align_center {
+  -webkit-box-align: center;
+          align-items: center; }
+
 .form__item {
   display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   width: 100%; }
 
-/*
-  Используются в паре, когда лейбл и контрол должны стоять в одну строку. В случае, когда лейбл находится над контролом, обёртки не нужны.
- */
 .form__label_width_default {
   max-width: 35%; }
 
-.form__item .form__label {
-  width: 35%; }
+.form_border_all {
+  border: 3px solid var(--border-color); }
 
-.form__item .form__control {
-  width: 65%; }
+.form_view_default {
+  background-color: var(--bg-color-default); }
 
 .icon-plus_vertical-align_center {
   -webkit-box-align: center;
@@ -932,24 +929,29 @@ img {
   text-align: center; }
 
 .text_size_s {
-  font-size: var(--font-size-s);
-  line-height: var(--line-height-s); }
+  min-height: var(--line-height-s);
+  line-height: var(--line-height-s);
+  font-size: var(--font-size-s); }
 
 .text_size_m {
-  font-size: var(--font-size-m);
-  line-height: var(--line-height-m); }
+  min-height: var(--line-height-m);
+  line-height: var(--line-height-m);
+  font-size: var(--font-size-m); }
 
 .text_size_l {
-  font-size: var(--font-size-l);
-  line-height: var(--line-height-l); }
+  min-height: var(--line-height-l);
+  line-height: var(--line-height-l);
+  font-size: var(--font-size-l); }
 
 .text_size_xl {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-xl); }
+  min-height: var(--line-height-xl);
+  line-height: var(--line-height-xl);
+  font-size: var(--font-size-xl); }
 
 .text_size_xxl {
-  font-size: var(--font-size-xxl);
-  line-height: var(--line-height-xxl); }
+  min-height: var(--line-height-xxl);
+  line-height: var(--line-height-xxl);
+  font-size: var(--font-size-xxl); }
 
 .text_type_h1 {
   margin: 18px 0 24px; }
@@ -1022,7 +1024,7 @@ img {
 
 .text__word {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-top;
   background-color: var(--text-color-primary); }
   .text_size_s .text__word {
     height: var(--font-size-s);
@@ -1198,11 +1200,6 @@ img {
           flex-direction: column;
   min-height: 335px;
   border: 3px solid var(--border-color); }
-
-.product__footer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
 
 .product__image {
   width: 100%;

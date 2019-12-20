@@ -2,27 +2,32 @@
 
 .text_size {
   &_s {
-    font-size: $font-size-s;
+    min-height: $line-height-s;
     line-height: $line-height-s;
+    font-size: $font-size-s;
   }
 
   &_m {
-    font-size: $font-size-m;
+    min-height: $line-height-m;
     line-height: $line-height-m;
+    font-size: $font-size-m;
   }
 
   &_l {
-    font-size: $font-size-l;
+    min-height: $line-height-l;
     line-height: $line-height-l;
+    font-size: $font-size-l;
   }
 
   &_xl {
-    font-size: $font-size-xl;
+    min-height: $line-height-xl;
     line-height: $line-height-xl;
+    font-size: $font-size-xl;
   }
 
   &_xxl {
-    font-size: $font-size-xxl;
+    min-height: $line-height-xxl;
     line-height: $line-height-xxl;
+    font-size: $font-size-xxl;
   }
 }
