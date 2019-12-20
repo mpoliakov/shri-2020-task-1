@@ -1,3 +1,7 @@
+$breakpoint: 1024px;
+$max-width: 1280px;
+$border-width: 3px;
+
 // theme/_color
 $bg-color-default: var(--bg-color-default);
 $bg-color-accent: var(--bg-color-accent);
@@ -34,7 +38,3 @@ $space-xxxxxl: var(--space-xxxxxl);
 
 // theme/_gap
 $gap: var(--gap);
-
-$breakpoint: 1024px;
-
-$max-width: 1280px;

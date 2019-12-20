@@ -2,10 +2,10 @@
 
 .list__item_border {
   &_bottom {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 3px solid $border-color;
   }
 
   &_top {
-    border-top: 1px solid $border-color;
+    border-top: 3px solid $border-color;
   }
 }

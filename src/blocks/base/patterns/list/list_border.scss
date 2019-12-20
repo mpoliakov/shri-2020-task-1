@@ -1,7 +1,5 @@
 @import "../../../variables";
 
-.list_border {
-  &_all {
-    border: 3px solid $border-color;
-  }
+.list_border_all {
+  border: $border-width solid $border-color;
 }
