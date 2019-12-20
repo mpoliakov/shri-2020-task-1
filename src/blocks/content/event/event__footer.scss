@@ -1,4 +1,5 @@
 .event__footer {
-  width: 100%;
-  margin: var(--space-xxxs) 0;
+  .text__word {
+    vertical-align: baseline;
+  }
 }

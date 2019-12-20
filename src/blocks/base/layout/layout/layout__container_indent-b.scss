@@ -1,9 +1,11 @@
 @import "../../../variables";
 
-.layout__container_indent-b_xxl {
-  margin-bottom: $space-xxl;
-}
+.layout__container_indent-b {
+  &_xxl {
+    margin-bottom: $space-xxl;
+  }
 
-.layout__container_indent-b_xxxxl {
-  margin-bottom: $space-xxxxl;
+  &_xxxxl {
+    margin-bottom: $space-xxxxl;
+  }
 }

@@ -1,15 +1,11 @@
 @import "../../variables";
 
-.theme_gap {
-  &_small {
-    --gap: #{$space-xl};
-  }
+.theme_gap_small {
+  --gap: #{$space-xl};
 }
 
-@media (max-width: $breakpoint){
-  .theme_gap {
-    &_small {
-      --gap: #{$space-s};
-    }
+@media (max-width: $breakpoint) {
+  .theme_gap_small {
+    --gap: #{$space-s};
   }
 }

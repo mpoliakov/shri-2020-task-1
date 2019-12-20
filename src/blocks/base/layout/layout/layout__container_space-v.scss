@@ -1,9 +1,11 @@
 @import "../../../variables";
 
-.layout__container_space-v_xxxxl {
-  padding: $space-xxxxl 0;
-}
+.layout__container_space-v {
+  &_xxxxl {
+    padding: $space-xxxxl 0;
+  }
 
-.layout__container_space-v_xxxxxl {
-  padding: $space-xxxxxl 0;
+  &_xxxxxl {
+    padding: $space-xxxxxl 0;
+  }
 }

@@ -1,9 +1,11 @@
 @import "../../../variables";
 
-.layout__container_size_s {
-  max-width: 920px;
-}
+.layout__container_size {
+  &_s {
+    max-width: 920px;
+  }
 
-.layout__container_size_m {
-  max-width: $max-width;
+  &_m {
+    max-width: $max-width;
+  }
 }

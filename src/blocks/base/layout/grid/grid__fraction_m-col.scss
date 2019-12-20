@@ -1,20 +1,22 @@
-.grid__fraction_m-col_2 {
-  grid-column: span 2;
-}
+.grid__fraction_m-col {
+  &_2 {
+    grid-column: span 2;
+  }
 
-.grid__fraction_m-col_3 {
-  grid-column: span 3;
-}
+  &_3 {
+    grid-column: span 3;
+  }
 
-.grid__fraction_m-col_4 {
-  grid-column: span 4;
-}
+  &_4 {
+    grid-column: span 4;
+  }
 
-.grid__fraction_m-col_5 {
-  grid-column: span 5;
-}
+  &_5 {
+    grid-column: span 5;
+  }
 
-.grid__fraction_m-col_8 {
-  grid-column: span 8;
+  &_8 {
+    grid-column: span 8;
+  }
 }
 

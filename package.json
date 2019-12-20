@@ -5,9 +5,9 @@
   "main": "templater.js",
   "scripts": {
     "build": "gulp build",
+    "start": "gulp start",
     "stylelint": "stylelint \"src/**/*.scss\" --syntax scss",
-    "test": "npm run stylelint",
-    "start": "gulp start"
+    "test": "npm run stylelint"
   },
   "repository": {
     "type": "git",
