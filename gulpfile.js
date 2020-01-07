@@ -65,7 +65,7 @@ gulp.task('build:js', async () => {
       presets : ['@babel/preset-env']
     }))
     .bundle()
-    .pipe(source("script.js"))
+    .pipe(source('script.js'))
     .pipe(gulp.dest('build'))
     .pipe(buffer())
     .pipe(uglify())
