@@ -1,18 +1,9 @@
 @import "../../variables";
-@import "history__actions";
-@import "history__description";
-@import "history__destination";
 @import "history__details";
-@import "history__hide";
-@import "history__info";
-@import "history__label";
-@import "history__pic";
 @import "history__quantity";
 @import "history__show";
-@import "history__show_brand";
 @import "history__time";
 @import "history__transaction";
-@import "history__transaction_brand";
 
 .history {
   border: $border-width solid $border-color;
