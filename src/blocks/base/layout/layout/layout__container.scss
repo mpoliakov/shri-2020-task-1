@@ -2,3 +2,9 @@
 @import "layout__container_indent-b";
 @import "layout__container_size";
 @import "layout__container_space-v";
+
+.layout__container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $bg-color-default;
+}

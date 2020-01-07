@@ -1,36 +1,38 @@
 @import "../mixins";
 
-.theme_color_project-default {
-  @include set-theme-colors();
-}
+.theme_color {
+  &_project-default {
+    @include set-theme-colors();
+  }
 
-.theme_color_project-brand {
-  @include set-theme-colors(
-    $bg-color-default: #0077ff,
-    $bg-color-accent: #ffffff,
-    $border-color: #ffffff,
-    $text-color: #ffffff,
-    $link-color: #ffffff
-  );
-}
+  &_project-brand {
+    @include set-theme-colors(
+      $bg-color-default: #0077ff,
+      $bg-color-accent: #ffffff,
+      $border-color: #ffffff,
+      $text-color: #ffffff,
+      $link-color: #ffffff
+    );
+  }
 
-.theme_color_project-inverse {
-  @include set-theme-colors(
-    $bg-color-default: #000000,
-    $bg-color-accent: #ffffff,
-    $border-color: #ffffff,
-    $text-color: #ffffff,
-    $link-color: #0077ff
-  );
-}
+  &_project-inverse {
+    @include set-theme-colors(
+      $bg-color-default: #000000,
+      $bg-color-accent: #ffffff,
+      $border-color: #ffffff,
+      $text-color: #ffffff,
+      $link-color: #0077ff
+    );
+  }
 
-.theme_color_project-warning {
-  @include set-theme-colors(
-    $bg-color-default: #ff3333,
-    $bg-color-accent: #ffffff,
-    $border-color: #ff3333,
-    $text-color: #ffffff,
-    $link-color: #ffffff
-  );
+  &_project-warning {
+    @include set-theme-colors(
+      $bg-color-default: #ff3333,
+      $bg-color-accent: #ffffff,
+      $border-color: #ff3333,
+      $text-color: #ffffff,
+      $link-color: #ffffff
+    );
+  }
 }
 
