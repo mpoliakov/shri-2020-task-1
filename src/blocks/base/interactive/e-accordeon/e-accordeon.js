@@ -1,9 +1,17 @@
 const accordionHandler = (clickEvent) => {
-  if (clickEvent.target.classList.contains('e-accordion__short')) {
-    let hiddenPartEl = clickEvent.target.parentElement.querySelector('.e-accordion__more');
+  const accordionEl = clickEvent.target.closest('.e-accordion');
 
-    if (hiddenPartEl) {
-      hiddenPartEl.classList.toggle('e-accordion__more_view_default');
+  if (!accordionEl) {
+    return;
+  }
+
+  const accordionShortEl = accordionEl.querySelector('.e-accordion__short');
+
+  if (accordionShortEl) {
+    let accordionMoreEl = accordionEl.querySelector('.e-accordion__more');
+
+    if (accordionMoreEl) {
+      accordionMoreEl.classList.toggle('e-accordion__more_view_default');
     }
   }
 };

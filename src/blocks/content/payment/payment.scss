@@ -1,7 +1,4 @@
 @import "../../variables";
-@import "payment__content";
-@import "payment__footer";
-@import "payment__header";
 
 .payment {
   display: flex;
@@ -9,3 +6,7 @@
   min-height: 335px;
   border: $border-width solid $border-color;
 }
+
+@import "payment__content";
+@import "payment__footer";
+@import "payment__header";

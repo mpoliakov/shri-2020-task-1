@@ -1,5 +1,4 @@
 @import "../../../variables";
-@import "text__word_width";
 
 .text__word {
   display: inline-block;
@@ -47,3 +46,6 @@
     background-color: $link-color;
   }
 }
+
+@import "text__word_width";
+

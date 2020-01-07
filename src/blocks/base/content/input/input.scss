@@ -1,7 +1,8 @@
 @import "../../../variables";
-@import "input_size";
 
 .input {
   width: 100%;
   border: $border-width solid $border-color;
 }
+
+@import "input_size";

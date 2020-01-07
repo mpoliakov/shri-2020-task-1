@@ -1,6 +1,8 @@
-@import "layout__container";
+@import "../../../variables";
 
 .layout {
   width: 100%;
   background-color: $bg-color-default;
 }
+
+@import "layout__container";

@@ -1,4 +1,4 @@
-@import "footer__content";
+@import "../../variables";
 
 .footer {
   width: 100%;
@@ -13,3 +13,5 @@
     padding: $space-xxxl $space-s;
   }
 }
+
+@import "footer__content";

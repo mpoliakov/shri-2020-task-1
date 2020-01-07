@@ -1,8 +1,9 @@
 @import "../../../variables";
-@import "button_size";
-@import "button_width";
 
 .button {
   width: 200px;
   background-color: $bg-color-accent;
 }
+
+@import "button_size";
+@import "button_width";

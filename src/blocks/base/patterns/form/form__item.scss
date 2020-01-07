@@ -1,12 +1,12 @@
+.form__item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 @import "form__item_border";
 @import "form__item_distribute";
 @import "form__item_indent-b";
 @import "form__item_space-h";
 @import "form__item_space-v";
 @import "form__item_vertical-align";
-
-.form__item {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}

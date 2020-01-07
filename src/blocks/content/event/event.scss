@@ -1,9 +1,9 @@
+.event {
+  min-height: 400px;
+}
+
 @import "event__content";
 @import "event__footer";
 @import "event__preview";
 @import "event__speaker";
 @import "event__title";
-
-.event {
-  min-height: 400px;
-}

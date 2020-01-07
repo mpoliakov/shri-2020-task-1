@@ -7,11 +7,19 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 
 var accordionHandler = function accordionHandler(clickEvent) {
-  if (clickEvent.target.classList.contains('e-accordion__short')) {
-    var hiddenPartEl = clickEvent.target.parentElement.querySelector('.e-accordion__more');
+  var accordionEl = clickEvent.target.closest('.e-accordion');
 
-    if (hiddenPartEl) {
-      hiddenPartEl.classList.toggle('e-accordion__more_view_default');
+  if (!accordionEl) {
+    return;
+  }
+
+  var accordionShortEl = accordionEl.querySelector('.e-accordion__short');
+
+  if (accordionShortEl) {
+    var accordionMoreEl = accordionEl.querySelector('.e-accordion__more');
+
+    if (accordionMoreEl) {
+      accordionMoreEl.classList.toggle('e-accordion__more_view_default');
     }
   }
 };
@@ -30,33 +38,35 @@ exports["default"] = void 0;
 var onoffswitchHandler = function onoffswitchHandler(clickEvent) {
   var onoffswitchEl = clickEvent.target.closest('.onoffswitch');
 
-  if (onoffswitchEl) {
-    onoffswitchEl.classList.toggle('onoffswitch_checked');
-    var themeElements = document.querySelectorAll('.theme');
+  if (!onoffswitchEl) {
+    return;
+  }
 
-    if (themeElements && themeElements.length) {
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
+  onoffswitchEl.classList.toggle('onoffswitch_checked');
+  var themeElements = document.querySelectorAll('.theme');
 
+  if (themeElements && themeElements.length) {
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = themeElements[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var themeEl = _step.value;
+        themeEl.classList.toggle('theme_color_project-default');
+        themeEl.classList.toggle('theme_color_project-inverse');
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
       try {
-        for (var _iterator = themeElements[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var themeEl = _step.value;
-          themeEl.classList.toggle('theme_color_project-default');
-          themeEl.classList.toggle('theme_color_project-inverse');
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
         }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
       } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-            _iterator["return"]();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
+        if (_didIteratorError) {
+          throw _iteratorError;
         }
       }
     }

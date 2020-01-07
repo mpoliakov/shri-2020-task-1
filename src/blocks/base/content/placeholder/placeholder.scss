@@ -1,6 +1,7 @@
 @import "../../../variables";
-@import "placeholder_size";
 
 .placeholder {
   background-color: $text-color-primary;
 }
+
+@import "placeholder_size";

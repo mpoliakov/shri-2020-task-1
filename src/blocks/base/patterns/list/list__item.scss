@@ -1,11 +1,3 @@
-@import "list__item_border";
-@import "list__item_distribute";
-@import "list__item_indent-b";
-@import "list__item_indent-t";
-@import "list__item_space-a";
-@import "list__item_space-b";
-@import "list__item_vertical-align";
-
 .list__item {
   display: flex;
   flex-direction: row;
@@ -15,3 +7,11 @@
     margin-top: 0;
   }
 }
+
+@import "list__item_border";
+@import "list__item_distribute";
+@import "list__item_indent-b";
+@import "list__item_indent-t";
+@import "list__item_space-a";
+@import "list__item_space-b";
+@import "list__item_vertical-align";

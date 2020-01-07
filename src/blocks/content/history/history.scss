@@ -1,10 +1,11 @@
 @import "../../variables";
+
+.history {
+  border: $border-width solid $border-color;
+}
+
 @import "history__details";
 @import "history__quantity";
 @import "history__show";
 @import "history__time";
 @import "history__transaction";
-
-.history {
-  border: $border-width solid $border-color;
-}

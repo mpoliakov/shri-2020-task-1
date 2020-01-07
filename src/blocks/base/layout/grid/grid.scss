@@ -1,8 +1,4 @@
 @import "../../../variables";
-@import "grid_m-columns";
-@import "grid_col-gap";
-@import "grid_row-gap";
-@import "grid__fraction";
 
 .grid {
   display: grid;
@@ -15,3 +11,9 @@
     flex-direction: column;
   }
 }
+
+@import "grid_m-columns";
+@import "grid_col-gap";
+@import "grid_row-gap";
+@import "grid__fraction";
+

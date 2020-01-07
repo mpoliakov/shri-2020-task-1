@@ -1,5 +1,3 @@
-.form__control {
-  .form__item & {
-    width: 65%;
-  }
+.form__item .form__control {
+  width: 65%;
 }

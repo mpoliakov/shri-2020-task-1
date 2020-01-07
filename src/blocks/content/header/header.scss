@@ -1,5 +1,4 @@
-@import "header__content";
-@import "header__logo";
+@import "../../variables";
 
 .header {
   width: 100%;
@@ -14,3 +13,6 @@
     padding: $space-xxxl $space-s;
   }
 }
+
+@import "header__content";
+@import "header__logo";

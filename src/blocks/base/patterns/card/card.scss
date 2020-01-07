@@ -1,9 +1,9 @@
-@import "card__content";
-@import "card__footer";
-@import "card_border";
-@import "card_view";
-
 .card {
   display: flex;
   flex-direction: column;
 }
+
+@import "card_border";
+@import "card_view";
+@import "card__content";
+@import "card__footer";

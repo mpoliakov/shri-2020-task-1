@@ -1,8 +1,8 @@
-@import "cover__footer";
-@import "cover__preview";
-
 .cover {
   display: flex;
   flex-direction: column;
   min-height: 472px;
 }
+
+@import "cover__footer";
+@import "cover__preview";

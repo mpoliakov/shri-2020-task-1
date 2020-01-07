@@ -1,7 +1,7 @@
-@import "warning__content";
-
 .warning {
   display: flex;
   flex-direction: column;
   min-height: 335px;
 }
+
+@import "warning__content";

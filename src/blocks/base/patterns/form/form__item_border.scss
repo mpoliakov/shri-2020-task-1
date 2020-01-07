@@ -1,7 +1,7 @@
 @import "../../../variables";
 
 .form__item_border_bottom {
-  border-bottom: 3px solid $border-color;
+  border-bottom: $border-width solid $border-color;
 
   &:last-child {
     border-bottom: none;

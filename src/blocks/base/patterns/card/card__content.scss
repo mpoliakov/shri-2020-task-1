@@ -1,9 +1,8 @@
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
 @import "card__content_distribute";
 @import "card__content_space-a";
 @import "card__content_vertical-align";
-
-.card__content {
-  display: flex;
-  //flex-direction: row;
-  flex-direction: column;
-}

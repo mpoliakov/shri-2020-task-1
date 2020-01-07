@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .product__title {
-  margin-bottom: var(--space-xxxl);
+  margin-bottom: $space-xxxl;
 }

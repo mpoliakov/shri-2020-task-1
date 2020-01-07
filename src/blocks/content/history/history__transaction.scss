@@ -3,7 +3,7 @@
 .history__transaction {
   display: flex;
   flex-direction: column;
-  border-bottom: 3px solid $border-color;
+  border-bottom: $border-width solid $border-color;
 
   &:last-child {
     border-bottom: none;
