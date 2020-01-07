@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.cover__preview {
+  width: 100%;
+  margin-bottom: 22px;
+
+  .image {
+    min-height: 180px;
+    border: 3px solid $border-color;
+  }
+}
